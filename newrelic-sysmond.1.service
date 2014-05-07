@@ -4,7 +4,7 @@ Description=newrelic-sysmond
 [Service]
 EnvironmentFile=/etc/environment
 TimeoutStartSec=20m
-ExecStart=/usr/bin/docker run --rm --name newrelic-sysmond-1 -e NEWRELIC_LICENSE_KEY=YOUR_NEW_RELIC_KEY johanneswuerbach/newrelic-sysmond
+ExecStart=/usr/bin/docker run --rm --name newrelic-sysmond-1 -e NEW_RELIC_LICENSE_KEY=YOUR_NEW_RELIC_KEY johanneswuerbach/newrelic-sysmond
 ExecStop=/usr/bin/docker kill newrelic-sysmond-1
 
 [Install]
