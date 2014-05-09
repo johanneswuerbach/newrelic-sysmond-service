@@ -17,3 +17,11 @@ fleetctl start newrelic-sysmond.1.service
 * Auto-start on all instances or allow to run multiple times without copy & paste
 * Read disk space from host
 * Read /proc from host (Idea: http://www.nuxeo.com/blog/development/2014/03/coreos-monitoring-diamond-graphite/)
+
+## Dockerfile
+
+[![image](https://d207aa93qlcgug.cloudfront.net/img/icons/framed-icon-checked-repository.svg)](https://index.docker.io/u/johanneswuerbach/newrelic-sysmond/)
+
+[**Trusted Build**](https://index.docker.io/u/johanneswuerbach/newrelic-sysmond/)
+
+This Docker image is based on the official [ubuntu:12.04](https://index.docker.io/_/ubuntu/) base image.
