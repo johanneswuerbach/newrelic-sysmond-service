@@ -2,6 +2,7 @@ FROM ubuntu:12.04
 MAINTAINER Johannes Wuerbach (johannes.wuerbach@googlemail.com)
 
 ENV NEW_RELIC_LICENSE_KEY YOUR_LICENSE_KEY
+ENV CUSTOM_HOSTNAME CUSTOM_HOSTNAME
 
 RUN apt-get update && apt-get install -yq ca-certificates wget
 
@@ -14,4 +15,4 @@ RUN wget -O- https://download.newrelic.com/548C16BF.gpg | apt-key add -
 RUN apt-get update
 RUN apt-get install newrelic-sysmond
 
-CMD nrsysmond-config --set license_key=$NEW_RELIC_LICENSE_KEY && /usr/sbin/nrsysmond -c /etc/newrelic/nrsysmond.cfg -l /dev/stdout -f
+CMD nrsysmond-config --set license_key=$NEW_RELIC_LICENSE_KEY && /usr/sbin/nrsysmond -c /etc/newrelic/nrsysmond.cfg -n $CUSTOM_HOSTNAME -l /dev/stdout -f
