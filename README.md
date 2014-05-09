@@ -13,11 +13,6 @@ fleetctl start newrelic-sysmond.1.service
 
 * Copy and increment `.1` in the filename and `new-relic-1` in the file to run on multiple instances.
 
-## TODO
-* Auto-start on all instances or allow to run multiple times without copy & paste
-* Read disk space from host
-* Read /proc from host (Idea: http://www.nuxeo.com/blog/development/2014/03/coreos-monitoring-diamond-graphite/)
-
 ## Dockerfile
 
 [![image](https://d207aa93qlcgug.cloudfront.net/img/icons/framed-icon-checked-repository.svg)](https://index.docker.io/u/johanneswuerbach/newrelic-sysmond/)
