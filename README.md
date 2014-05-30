@@ -20,3 +20,8 @@ fleetctl start newrelic-sysmond.1.service
 [**Trusted Build**](https://index.docker.io/u/johanneswuerbach/newrelic-sysmond/)
 
 This Docker image is based on the official [ubuntu:12.04](https://index.docker.io/_/ubuntu/) base image.
+
+## NewRelic Agent
+
+[Getting started](https://docs.newrelic.com/docs/server/new-relic-servers)  
+[Release Notes](https://docs.newrelic.com/docs/releases/linux_server/)
