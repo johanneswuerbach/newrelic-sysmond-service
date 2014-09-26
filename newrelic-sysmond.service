@@ -1,0 +1,14 @@
+[Unit]
+Description=newrelic-sysmond
+
+[Service]
+EnvironmentFile=/etc/environment
+TimeoutStartSec=20m
+ExecStart=/usr/bin/docker run --rm --name newrelic-sysmond -e NEW_RELIC_LICENSE_KEY=YOUR_NEW_RELIC_KEY -e CUSTOM_HOSTNAME=%H johanneswuerbach/newrelic-sysmond
+ExecStop=/usr/bin/docker kill newrelic-sysmond
+
+[Install]
+WantedBy=multi-user.target
+
+[X-Fleet]
+Global=true
