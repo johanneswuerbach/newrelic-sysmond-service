@@ -1,4 +1,4 @@
-FROM ubuntu:12.04
+FROM ubuntu:14.04
 MAINTAINER Johannes Wuerbach (johannes.wuerbach@googlemail.com)
 
 ENV NEW_RELIC_LICENSE_KEY YOUR_LICENSE_KEY
