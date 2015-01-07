@@ -5,11 +5,11 @@ ENV NEW_RELIC_LICENSE_KEY YOUR_LICENSE_KEY
 ENV CUSTOM_HOSTNAME CUSTOM_HOSTNAME
 ENV LOG_LEVEL info
 
-ADD https://download.newrelic.com/server_monitor/release/newrelic-sysmond-1.5.1.93-linux.tar.gz /newrelic-sysmond.tar.gz
+ADD https://download.newrelic.com/server_monitor/release/newrelic-sysmond-2.0.0.105-linux.tar.gz /newrelic-sysmond.tar.gz
 RUN tar xvfz /newrelic-sysmond.tar.gz && \
   rm /newrelic-sysmond.tar.gz
 
-WORKDIR /newrelic-sysmond-1.5.1.93-linux
+WORKDIR /newrelic-sysmond-2.0.0.105-linux
 RUN mv ./nrsysmond.cfg /etc/ && \
   mv ./scripts/nrsysmond-config /bin && \
   mv ./daemon/nrsysmond.x64 /bin/nrsysmond
