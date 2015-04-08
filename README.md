@@ -4,6 +4,7 @@ Run NewRelic server monitoring in a CoreOS fleet.
 
 ## Installation
 * Replace `YOUR_NEW_RELIC_KEY` in `newrelic-sysmond.service` with your NewRelic licence key.
+* Optional Include Labels to `LABELS` variable in `newrelic-sysmond.service`.
 * Submit the monitoring agent into your fleet
 
 ```bash
