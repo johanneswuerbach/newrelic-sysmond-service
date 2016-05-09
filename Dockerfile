@@ -4,7 +4,7 @@ MAINTAINER Johannes Wuerbach (johannes.wuerbach@googlemail.com)
 ENV NEW_RELIC_LICENSE_KEY YOUR_LICENSE_KEY
 ENV CUSTOM_HOSTNAME CUSTOM_HOSTNAME
 ENV LOG_LEVEL info
-ENV NEW_RELIC_VERSION 2.3.0.129
+ENV NEW_RELIC_VERSION 2.3.0.132
 
 ADD https://download.newrelic.com/server_monitor/release/newrelic-sysmond-${NEW_RELIC_VERSION}-linux.tar.gz /newrelic-sysmond.tar.gz
 RUN tar xvfz /newrelic-sysmond.tar.gz && \
