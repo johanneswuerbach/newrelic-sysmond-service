@@ -1,4 +1,4 @@
-# newrelic-sysmond [![image](https://badge.imagelayers.io/johanneswuerbach/newrelic-sysmond.svg)](https://imagelayers.io/?images=johanneswuerbach%2Fnewrelic-sysmond:latest)
+# newrelic-sysmond [![](https://images.microbadger.com/badges/image/johanneswuerbach/newrelic-sysmond.svg)](https://microbadger.com/images/johanneswuerbach/newrelic-sysmond)
 
 Run NewRelic server monitoring in a CoreOS fleet.
 
